@@ -2,8 +2,8 @@
 # Spring 2023
 # Homework 5
 
-# YOUR NAME HERE
-# YOUR GITHUB USER NAME HERE
+# YOUR NAME HERE: Tianhua Song
+# YOUR GITHUB USER NAME HERE:SkySong4
 
 # Due date: Sunday April 30th before midnight
 # Write your answers in the space between the questions, and commit/push only
@@ -99,6 +99,7 @@ print(epu_wide)
 # Question 3c: Finally, merge this data into your merged data from question 2, 
 # making sure the merge does what you expect.
 # Merge the wide EPU data into the merged data from question 2
+# Need Change content to Abbr. like in question 1 in the STATE column in the state-visits.xlsx file
 final_df = pd.merge(merged_df, epu_wide, left_on='STATE', right_on='state', how='inner')
 # Drop the duplicate 'state' column
 print(final_df) 
